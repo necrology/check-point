@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/check-point/';
-
+$config['base_url'] = 'https://1000-36-90-159-240.ap.ngrok.io/check-point/';
+date_default_timezone_set('Asia/Jakarta');
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/check-point/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -225,7 +225,7 @@ $config['allow_get_array'] = TRUE;
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 1;
 
 /*
 |--------------------------------------------------------------------------
@@ -262,7 +262,7 @@ $config['log_file_extension'] = '';
 | IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal
 |            integer notation (i.e. 0700, 0644, etc.)
 */
-$config['log_file_permissions'] = 0644;
+$config['log_file_permissions'] = 0777;
 
 /*
 |--------------------------------------------------------------------------
